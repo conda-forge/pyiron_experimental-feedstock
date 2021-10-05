@@ -1,5 +1,5 @@
 {% set name = "pyiron_experimental" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/pyiron-experimental/{{ name }}-{{ version }}.tar.gz
-  sha256: 07cec29243cac447c4d853c1646cf6930eadaa13fa419992dda15fa254c36570
+  sha256: 4a6d6c38893b73070eef22ee6d88e891b58046e509be8d04c0264136f3b7f389
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,9 +20,9 @@ requirements:
     - pip
     - python >3.5
   run:
-    - hyperspy >=1.5.2
-    - pyiron_base >=0.1.45
-    - pystem >=0.0.25
+    - hyperspy >=1.6.4
+    - pyiron_base >=0.3.5
+    - pystem >=0.0.26
     - python >3.5
     - scanf >=1.5.2
     - temmeta >=0.0.6
