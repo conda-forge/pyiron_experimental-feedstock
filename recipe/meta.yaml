@@ -1,5 +1,5 @@
 {% set name = "pyiron_experimental" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/pyiron-experimental/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a6d6c38893b73070eef22ee6d88e891b58046e509be8d04c0264136f3b7f389
+  sha256: d333970e5db6aadf976ce5abcb44c8d57a6d9fef1b2b673737ed25cfc5336167
 
 build:
   number: 0
@@ -51,5 +51,4 @@ extra:
     - pyiron-runner
     - jan-janssen
     - pmrv
-    - muh-hassani
     - niklassiemer
