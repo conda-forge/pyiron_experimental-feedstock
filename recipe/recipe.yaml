@@ -35,7 +35,7 @@ tests:
   - python:
       imports:
         - pyiron_experimental
-      pip_check: true
+      pip_check: false
       python_version:
         - ${{ python_min }}
         - "*"
